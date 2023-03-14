@@ -17,5 +17,5 @@ use App\Models\Pengguna;
 
 Route::get('/', function() {
     $penggunas = Pengguna::all();
-    return view('welcome', compact("penggunas"));
+    return view('welcome', compact('penggunas'));
 });
