@@ -47,10 +47,12 @@
                             <td>Telepon</td>
                         </tr>
                         @foreach ($penggunas as $pengguna)
+                        <tr>
                             <td>$pengguna->user_id</td>
                             <td>$pengguna->nama</td>
                             <td>$pengguna->alamat</td>
                             <td>$pengguna->telepon</td>
+                        </tr>
                         @endforeach
                     </table>
                 </div>
