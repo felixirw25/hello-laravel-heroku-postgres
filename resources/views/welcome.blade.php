@@ -38,6 +38,22 @@
                     </svg>
                 </div>
                 <center><h1 style="color: white; font-size: 40px">Hello World - Laravel</h1></center>
+                <div>
+                    <table>
+                        <tr>
+                            <td>No.</td>
+                            <td>Nama</td>
+                            <td>Alamat</td>
+                            <td>Telepon</td>
+                        </tr>
+                        @foreach ($penggunas as $pengguna)
+                            <td>$pengguna->user_id</td>
+                            <td>$pengguna->nama</td>
+                            <td>$pengguna->alamat</td>
+                            <td>$pengguna->telepon</td>
+                        @endforeach
+                    </table>
+                </div>
             </div>
         </div>
     </body>
